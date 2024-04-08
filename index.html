@@ -1,855 +1,1437 @@
-<!DOCTYPE html> 
-<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <!--ADSENSE-->
-<!--     <script data-ad-client="ca-pub-1642640364155791" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <meta name="google-site-verification" content="02wm8dMp79FlxOu-QNCovzR5Sdqrn-DnoaZ7fzDLMpg" /> -->
-   <!--- basic page needs
-   ================================================== -->
-   <meta charset="utf-8">
-	<title>Ali Solanki | Portfolio Website | Developer</title>
-	<meta name="description" content="Ali Solanki is a Developer cum YouTuber and is a B.Tech student at KJ Somaiya College Of Engineering">  
-	<meta name="author" content="Mohd. Ali Solanki">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
 
-    <meta name="keywords" content="ali, solanki, ali solanki, mumbai, developer, web developer, android developer"/>
-    <meta name="subject" content="Ali Solanki Portfolio">
-    <meta name="copyright"content="Ali Solanki">
-    <meta name="language" content="EN">
-    <meta name="robots" content="index, follow" />
-    <meta name="revised" content="Thursday, December 12th, 2019, 1:04 am" />
-    <meta name="abstract" content="ali solanki">
-    <meta name="topic" content="ali solanki portfolio">
-    <meta name="summary" content="This is Ali Solanki's Portfolio Website who is a Developer and a YouTuber.">
-    <meta name="Classification" content="Business">
-    <meta name="author" content="ali solanki, alisolanki123@gmail.com">
-    <meta name="designer" content="ali solanki">
-    <meta name="copyright" content="ali solanki">
-    <meta name="reply-to" content="alisolanki123@gmail.com">
-    <meta name="owner" content="ali solanki">
-    <meta name="url" content="https://alisolanki.github.io/Portfolio/">
-    <meta name="identifier-URL" content="https://alisolanki.github.io/Portfolio/">
-    <meta name="directory" content="submission">
-    <meta name="category" content="Business | Portfolio">
-    <meta name="coverage" content="Worldwide">
-    <meta name="distribution" content="Global">
-    <meta name="rating" content="General">
-    <meta name="revisit-after" content="7 days">
-    <meta http-equiv="Expires" content="0">
+:root {
+  --color-primary: #191d2b;
+  --color-secondary: #27AE60;
+  --color-white: #FFFFFF;
+  --color-black: #000;
+  --color-grey0: #f8f8f8;
+  --color-grey-1: #dbe1e8;
+  --color-grey-2: #b2becd;
+  --color-grey-3: #6c7983;
+  --color-grey-4: #454e56;
+  --color-grey-5: #2a2e35;
+  --color-grey-6: #12181b;
+  --br-sm-2: 14px;
+  --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+}
 
-   <!-- mobile specific metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+.light-mode {
+  --color-primary: #FFFFFF;
+  --color-secondary: #F56692;
+  --color-white: #454e56;
+  --color-black: #000;
+  --color-grey0: #f8f8f8;
+  --color-grey-1: #6c7983;
+  --color-grey-2: #6c7983;
+  --color-grey-3: #6c7983;
+  --color-grey-4: #454e56;
+  --color-grey-5: #f8f8f8;
+  --color-grey-6: #12181b;
+}
 
- 	<!-- CSS
-   ================================================== -->
-   <link rel="stylesheet" href="css/base.css">  
-   <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/vendor.css">     
+body {
+  background-color: var(--color-primary);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  color: var(--color-white);
+  transition: all 0.4s ease-in-out;
+}
 
-   <!-- script
-   ================================================== -->   
-	<script src="js/modernizr.js"></script>
-	<script src="js/pace.min.js"></script>
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<!--     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153937526-1"></script> -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-153937526-1');
-    </script>
+header {
+  min-height: 100vh;
+  color: var(--color-white);
+  overflow: hidden;
+  padding: 0 !important;
+}
 
-   <!-- favicons ================================================== -->
-	<link rel="icon" type="image/png" href="favicon.png">
+section {
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 3rem 18rem;
+}
 
+.container {
+  display: none;
+  transform: translateY(-100%) scale(0);
+  transition: all 0.4s ease-in-out;
+  background-color: var(--color-primary);
+}
+
+.active {
+  display: block;
+  animation: appear 1s ease-in-out;
+  transform: translateY(0) scaleY(1);
+}
+@keyframes appear {
+  0% {
+    transform: translateY(-100%) scaleY(0);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+}
+
+.controls {
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  right: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+}
+.controls .control {
+  padding: 1rem;
+  cursor: pointer;
+  background-color: var(--color-grey-4);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.7rem 0;
+  box-shadow: var(--box-shadow-1);
+}
+.controls .control i {
+  font-size: 1.2rem;
+  color: var(--color-grey-2);
+  pointer-events: none;
+}
+.controls .active-btn {
+  background-color: var(--color-secondary);
+  transition: all 0.4s ease-in-out;
+}
+.controls .active-btn i {
+  color: var(--color-white);
+}
+
+.theme-btn {
+  top: 5%;
+  right: 3%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--color-grey-4);
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.1s ease-in-out;
+}
+.theme-btn:active {
+  transform: translateY(-3px);
+}
+.theme-btn i {
+  font-size: 1.4rem;
+  color: var(--color-grey-2);
+  pointer-events: none;
+}
+
+/*Header-content*/
+.header-content {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  min-height: 100vh;
+}
+.header-content .left-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header-content .left-header .h-shape {
+  transition: all 0.4s ease-in-out;
+  width: 65%;
+  height: 100%;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
+}
+.header-content .left-header .image {
+  border-radius: var(--br-sm-2);
+  height: 90%;
+  width: 68%;
+  margin-left: 4rem;
+  background-color: var(--color-black);
+  transition: all 0.4s ease-in-out;
+}
+.header-content .left-header .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease-in-out;
+  filter: grayscale(100%);
+}
+.header-content .left-header .image img:hover {
+  filter: grayscale(0);
+}
+.header-content .right-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 70%;
+  margin: auto;
+}
+.header-content .right-header .name {
+  font-size: 3rem;
+}
+.header-content .right-header .name span {
+  color: var(--color-secondary);
+}
+.header-content .right-header p {
+  margin: 1.5rem 0;
+  line-height: 2rem;
+}
+
+/*About*/
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 3.5rem;
+  padding-bottom: 5rem;
+}
+.about-container .right-about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+.about-container .right-about .about-item {
+  border: 1px solid var(--color-grey-5);
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+.about-container .right-about .about-item:hover {
+  cursor: default;
+  transform: translateY(-5px);
+  border: 1px solid var(--color-secondary);
+  box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
+}
+.about-container .right-about .about-item .abt-text {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.about-container .right-about .about-item .abt-text .large-text {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+.about-container .right-about .about-item .abt-text .small-text {
+  padding-left: 3rem;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: var(--color-grey-1);
+  letter-spacing: 2px;
+}
+.about-container .right-about .about-item .abt-text .small-text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 2rem;
+  height: 2px;
+  background-color: var(--color-grey-5);
+}
+.about-container .left-about {
+  padding-right: 5rem;
+}
+.about-container .left-about p {
+  line-height: 2rem;
+  padding: 1rem;
+  color: var(--color-grey-1);
+}
+.about-container .left-about h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.about-stats {
+  padding-bottom: 4rem;
+}
+.about-stats .progress-bars {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+.about-stats .progress-bars .progress-bar {
+  display: flex;
+  flex-direction: column;
+}
+.about-stats .progress-bars .progress-bar .prog-title {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.about-stats .progress-bars .progress-bar .progress-con {
+  display: flex;
+  align-items: center;
+}
+.about-stats .progress-bars .progress-bar .progress-con .prog-text {
+  color: var(--color-grey-2);
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress {
+  width: 100%;
+  height: 0.45rem;
+  background-color: var(--color-grey-4);
+  margin-left: 1rem;
+  position: relative;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--color-secondary);
+  transition: all 0.4s ease-in-out;
+  width: 60%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .html {
+  width: 80%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .css {
+  width: 95%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .js {
+  width: 75%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .react {
+  width: 60%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .node {
+  width: 87%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .python {
+  width: 70%;
+}
+
+.stat-title {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 3.5rem 0;
+  position: relative;
+}
+.stat-title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 40%;
+  height: 1px;
+  background-color: var(--color-grey-5);
+  transform: translateX(-50%);
+}
+
+/*Timeline*/
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  padding-bottom: 3rem;
+}
+.timeline .timeline-item {
+  position: relative;
+  padding-left: 3rem;
+  border-left: 1px solid var(--color-grey-5);
+}
+.timeline .timeline-item .tl-icon {
+  position: absolute;
+  left: -27px;
+  top: 0;
+  background-color: var(--color-secondary);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.timeline .timeline-item .tl-icon i {
+  font-size: 1.3rem;
+}
+.timeline .timeline-item .tl-duration {
+  padding: 0.2rem 0.6rem;
+  background-color: var(--color-grey-5);
+  border-radius: 15px;
+  display: inline-block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.timeline .timeline-item h5 {
+  padding: 1rem 0;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.timeline .timeline-item h5 span {
+  color: var(--color-grey-2);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.timeline .timeline-item p {
+  color: var(--color-grey-2);
+}
+
+.port-text {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.portfolios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 3rem;
+}
+.portfolios .portfolio-item {
+  position: relative;
+  border-radius: 15px;
+}
+.portfolios .portfolio-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.portfolios .portfolio-item .hover-items {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.4s ease-in-out;
+}
+.portfolios .portfolio-item .hover-items h3 {
+  font-size: 1.5rem;
+  color: var(--color-white);
+  margin-bottom: 1.5rem;
+}
+.portfolios .portfolio-item .hover-items .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolios .portfolio-item .hover-items .icons .icon {
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.portfolios .portfolio-item .hover-items .icons .icon i {
+  font-size: 1.5rem;
+  color: var(--color-white);
+  margin: 0 1rem;
+}
+.portfolios .portfolio-item .hover-items .icons .icon:hover {
+  background-color: var(--color-white);
+}
+.portfolios .portfolio-item .hover-items .icons .icon:hover i {
+  color: var(--color-primary);
+}
+
+.portfolio-item:hover .hover-items {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 3rem;
+}
+.blogs .blog {
+  position: relative;
+  background-color: var(--color-grey-5);
+  border-radius: 5px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in-out;
+}
+.blogs .blog:hover {
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+  transition: all 0.4s ease-in-out;
+}
+.blogs .blog:hover img {
+  filter: grayscale(0);
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+}
+.blogs .blog img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  filter: grayscale(100%);
+  transition: all 0.4s ease-in-out;
+}
+.blogs .blog .blog-text {
+  margin-top: -7px;
+  padding: 1.1rem;
+  border-top: 8px solid var(--color-secondary);
+}
+.blogs .blog .blog-text h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.blogs .blog .blog-text h4:hover {
+  color: var(--color-secondary);
+}
+.blogs .blog .blog-text p {
+  color: var(--color-grey-2);
+  line-height: 2rem;
+  padding-bottom: 1rem;
+}
+
+.contact-content-con {
+  display: flex;
+  padding-top: 3.5rem;
+}
+.contact-content-con .left-contact {
+  flex: 2;
+  max-width: 50%;
+  margin: auto;
+
+}
+.contact-content-con .left-contact h4 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.contact-content-con .left-contact p {
+  margin: 1rem 0;
+  line-height: 2rem;
+}
+.contact-content-con .left-contact .contact-info .contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-content-con .left-contact .contact-info .contact-item p {
+  margin: 0.3rem 0 !important;
+  padding: 0 !important;
+}
+.contact-content-con .left-contact .contact-info .contact-item .icon {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+}
+.contact-content-con .left-contact .contact-info .contact-item .icon i {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.contact-content-con .left-contact .contact-icon {
+  display: flex;
+  margin-top: 2rem;
+}
+.contact-content-con .left-contact .contact-icon a {
+  display: flex;
+  align-items: center;
+  color: var(--color-white);
+  background-color: var(--color-grey-5);
+  cursor: pointer;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 0.4rem;
+  transition: all 0.4s ease-in-out;
+}
+.contact-content-con .left-contact .contact-icon a:hover {
+  background-color: var(--color-secondary);
+}
+.contact-content-con .left-contact .contact-icon a:hover i {
+  color: var(--color-primary);
+}
+.contact-content-con .left-contact .contact-icon a i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+.contact-content-con .right-contact {
+  flex: 3;
+  margin-left: 3rem;
+}
+.contact-content-con .right-contact .input-control {
+  margin: 1.5rem 0;
+}
+.contact-content-con .right-contact .input-control input, .contact-content-con .right-contact .input-control textarea {
+  border-radius: 30px;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.8rem 1.1rem;
+  outline: none;
+  border: none;
+  background-color: var(--color-grey-5);
+  width: 100%;
+  color: var(--color-white);
+  resize: none;
+}
+.contact-content-con .right-contact .i-c-2 {
+  display: flex;
+}
+.contact-content-con .right-contact .i-c-2 :last-child {
+  margin-left: 1.5rem;
+}
+.contact-content-con .right-contact .submit-btn {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/*Independed components*/
+.btn-con {
+  display: flex;
+  align-self: flex-start;
+}
+
+.main-btn {
+  border-radius: 30px;
+  color: inherit;
+  font-weight: 600;
+  position: relative;
+  border: 1px solid var(--color-secondary);
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+.main-btn .btn-text {
+  padding: 0 2rem;
+}
+.main-btn .btn-icon {
+  background-color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 1rem;
+}
+.main-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: all 0.4s ease-out;
+  z-index: -1;
+}
+.main-btn:hover {
+  transition: all 0.4s ease-out;
+}
+.main-btn:hover::before {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-secondary);
+  transform: translateX(0);
+  transition: all 0.4s ease-out;
+}
+
+.main-title {
+  text-align: center;
+}
+.main-title h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.main-title h2 span {
+  color: var(--color-secondary);
+}
+.main-title h2 .bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: var(--color-grey-5);
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+  font-size: 6.3rem;
+}
+
+.about-container .left-about p {
+  padding-left: 0;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0 !important;
+  }
+
+  .theme-btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .header-content {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 6rem;
+  }
+
+  .left-header .h-shape {
+    display: none;
+  }
+
+  .right-header {
+    grid-row: 1;
+    padding-right: 0rem !important;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .right-header .name {
+    font-size: 2.5rem !important;
+    text-align: center;
+    padding-top: 3rem;
+  }
+
+  .header-content .left-header .image {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+  }
+  .controls .control {
+    margin: 1rem 0.3rem;
+  }
+
+  .about-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-container .right-about {
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 2.5rem;
+  }
+  .about-container .left-about {
+    padding-right: 0;
+  }
+  .about-container .left-about p {
+    padding-left: 0;
+  }
+
+  .timeline {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 6rem;
+  }
+
+  .container {
+    padding: 2rem 2.5rem !important;
+  }
+
+  .about-stats .progress-bars {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .portfolios {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 6rem;
+    margin-top: 1rem;
+  }
+
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 6rem;
+  }
+
+  .contact-content-con {
+    flex-direction: column;
+  }
+  .contact-content-con .right-contact {
+    margin-left: 0;
+    margin-top: 2.5rem;
+  }
+
+  .contact-content-con .right-contact .i-c-2 {
+    flex-direction: column;
+  }
+
+  .contact-content-con .right-contact .i-c-2 :last-child {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+
+  .contact-content-con .right-contact {
+    margin-bottom: 6rem;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+  .contact-item p {
+    font-size: 15px;
+    color: var(--color-grey-2);
+  }
+  .contact-item span {
+    font-size: 15px;
+  }
+  .contact-item .icon {
+    grid-template-columns: 25px 1fr;
+  }
+
+  .main-title h2 {
+    font-size: 2rem;
+  }
+  .main-title h2 span {
+    font-size: 2.3rem;
+  }
+  .main-title h2 .bg-text {
+    font-size: 2.3rem;
+  }
+}
+@media screen and (max-width: 1432px) {
+  .container {
+    padding: 7rem 11rem;
+  }
+
+  .contact-content-con {
+    flex-direction: column;
+  }
+  .contact-content-con .right-contact {
+    margin-left: 0;
+    margin-top: 2.5rem;
+  }
+
+  .contact-content-con .right-contact .i-c-2 {
+    flex-direction: column;
+  }
+
+  .contact-content-con .right-contact .i-c-2 :last-child {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+
+  .contact-content-con .right-contact {
+    margin-bottom: 6rem;
+  }
+
+  .main-title h2 .bg-text {
+    font-size: 5.5rem;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .blogs {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 6rem;
+  }
+
+  .portfolios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header-content .right-header {
+    padding-right: 9rem;
+  }
+}
+@media screen and (max-width: 660px) {
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .portfolios {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 1070px) {
+  .about-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-container .right-about {
+    padding-top: 2.5rem;
+  }
+
+  .main-title h2 {
+    font-size: 4rem;
+  }
+  .main-title h2 span {
+    font-size: 4rem;
+  }
+  .main-title h2 .bg-text {
+    font-size: 4.5rem;
+  }
+}
+@media screen and (max-width: 970px) {
+  .container {
+    padding: 7rem 6rem;
+  }
+
+  .about-container .left-about {
+    padding-right: 0rem;
+  }
+
+  .header-content {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 6rem;
+  }
+
+  .left-header .h-shape {
+    display: none;
+  }
+  .left-header .image {
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+
+  .right-header {
+    grid-row: 1;
+    padding-right: 0rem !important;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .right-header .name {
+    font-size: 2.5rem !important;
+    text-align: center;
+    padding-top: 3rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container {
+    padding: 7rem 3rem;
+  }
+
+  .about-stats .progress-bars {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about-container .right-about {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .timeline {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .main-title h2 {
+    font-size: 3rem;
+  }
+  .main-title h2 span {
+    font-size: 3rem;
+  }
+  .main-title h2 .bg-text {
+    font-size: 4rem;
+  }
+}
+.color-secondary{
+  color:var(--color-secondary)
+}
+/*# sourceMappingURL=styles.css.map */
+
+</style>
 </head>
-
-<body id="top">
-
-	<!-- header 
-   ================================================== -->
-   <header>   	
-   	<div class="">
-
-   		<div class="bar">
-   			<a class="menu-toggle" href="#"><span>Menu</span></a>
-
-	   		<div class="logo">
-		         <a href="index.html">Ali Solanki</a>
-		      </div>		      
-
-		   	<nav id="main-nav-wrap">
-					<ul class="main-navigation">
-						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
-						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
-						<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
-						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>					
-						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>	
-					</ul>
-				</nav>    		
-   		</div> <!-- /top-bar --> 
-   		
-   	</div> <!-- /row --> 		
-   </header> <!-- /header -->
-
-	<!-- intro section
-   ================================================== -->
-   <section id="intro">   
-
-   	<div class="intro-overlay"></div>	
-
-   	<div class="intro-content">
-   		<div class="row">
-
-   			<div class="col-twelve">
-
-				   <h5>Hello, World.</h5>
-					<h1>I<span style="color: #CC005F;">'</span>m Ali Solanki<span style="color: #CC005F;">.</span></h1>
-
-                    <p class="intro-position">
-                        <span>Developer</span>
-                        <span>Starter</span>
-                        <span>YouTuber</span>
-                    </p>
-
-	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
-
-	   		</div>  
-   			
-   		</div>   		 		
-   	</div> <!-- /intro-content --> 
-
-        <ul class="intro-social">
-            <li><a href="https://www.linkedin.com/in/ali-solanki-2a1227192/"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://www.instagram.com/alisolankii"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="https://github.com/alisolanki"><i class="fa fa-github"></i></a></li>
-            <li><a href="https://www.youtube.com/channel/UCgzz4Kd1YpzxJOkrhf5U_7A/"><i class="fa fa-youtube"></i></a></li>
-            <li><a href="https://www.codechef.com/users/alisolanki"><i class="fa fa-code"></i></a></li>
-            <li><a href="https://play.google.com/store/apps/dev?id=6991863212111988524"><i class="fa fa-play"></i></a></li>
-	    <li><a href="https://apps.apple.com/gh/developer/ali-solanki/id1556898924"><i class="fa fa-apple"></i></a></li>
-        </ul> <!-- /intro-social -->      	
-
-   </section> <!-- /intro -->
-
-
-   <!-- about section
-   ================================================== -->
-   <section id="about">
-
-   	<div class="row section-intro">
-   		<div class="col-twelve">
-            <!-- YouTube section ================================================== -->
-            <div style="padding-bottom: 10rem; height: 400px;">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8zzwUypZiF8" frameborder="0" 
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-   			<h5>About</h5>
-   			<h2>Let me introduce myself.</h2>
-
-   			<div class="intro-info">
-
-   				<img src="images/profile-pic.jpg" alt="Ali Solanki Picture">
-
-   				<p class="lead">"Lad with a <font color="#FF0077">million</font> dreams."</p>
-   			</div>   			
-
-   		</div>   		
-   	</div> <!-- /section-intro -->
-
-   	<div class="row about-content">
-
-   		<div class="col-six tab-full">
-
-   			<h3>Profile</h3>
-                <p>A Computer Science and Engineering (CSE) B.Tech. student from KJ Somaiya College Of Engineering with excellent academic background and diverse skillset.                       Experienced in Web, Flutter and Android Development.
-                   I am well versed with Flutter, Rest Apis, Python, Kotlin, Java, C++ and basics of JavaScript & CSS.</p>
-
-   			<ul class="info-list">
-   				<li>
-   					<strong>Fullname:</strong>
-   					<span>Mohd. Ali Solanki</span>
-   				</li>
-   				<li>
-   					<strong>Birth Date:</strong>
-   					<span>November 8th, 2001</span>
-   				</li>
-   				<li>
-   					<strong>Website:</strong>
-   					<span><a href="#">https://alisolanki.github.io/Portfolio/</a></span>
-   				</li>
-                    <li>
-                        <strong>Email:</strong>
-                        <span>alisolanki123@gmail.com</span>
-                        <span>mohammed.solanki@somaiya.edu</span>
-                    </li>
-
-   			</ul> <!-- /info-list -->
-
-   		</div>
-
-   		<div class="col-six tab-full">
-
-   			<h3>Skills</h3>
+<body class="main-content">
+    <header class="container header active" id="home">
+        <div class="header-content">
+            <!-- <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="img/hero.png" alt="">
+                </div>
+            </div> -->
+            <div class="right-header">
+                <h1 class="name">
+                    Hi, I'm <span>Muniba Hina</span>
+                    A Front End Web Developer.
+                </h1>
                 <p>
-                    <strong>Languages:</strong><br />
-                    <b>English :</b><br /> Read, Write, Speak : <i>Native</i><br />
-                    <b>Hindi :</b><br /> Read, Write, Speak : <i>Native</i><br />
-                    <b>Marathi :</b><br /> Read, Write, Speak : <i>Native</i><br />
-                    <b>French :</b><br /> Read, Write : <i>Proficient</i><br />
-                    <b>Gujarati :</b><br /> Read, Speak : <i>Mother Tongue</i><br />
-
+                  With a keen eye for aesthetics and a passion for seamless user experiences, 
+                  my front-end programming skills are finely honed to deliver exceptional results. 
+                  From crafting visually captivating interfaces to optimizing performance for lightning-fast load times, 
+                  I possess the technical prowess and creative flair to create front-end magic. 
+                  My extensive experience in HTML, CSS, JavaScript, and various frameworks has empowered me to craft intuitive 
+                  and responsive web applications that captivate users from the moment they land on the page. 
+                  With a relentless pursuit of excellence and an unwavering commitment to staying abreast of the latest 
+                  industry trends, my front-end programming expertise is unparalleled. 
+                  Get ready to be dazzled by my high-pitched front-end programming prowess!
                 </p>
-
-
-                <ul class="skill-bars">
-                    <li>
-<!--                         <div class="progress percent95"><span>95%</span></div> -->
-                        <strong>Flutter | Dart</strong>
-                    </li>
-                    <li>
-<!--                         <div class="progress percent90"><span>90%</span></div> -->
-                        <strong>Firebase</strong>
-                    </li>
-                    <li>
-<!--                         <div class="progress percent85"><span>90%</span></div> -->
-                        <strong>Python</strong>
-                    </li>
-                    <li>
-<!--                         <div class="progress percent75"><span>75%</span></div> -->
-                        <strong>Android Studio | Kotlin, </strong>
-                    </li>
-		    <li>
-<!--                         <div class="progress percent75"><span>75%</span></div> -->
-                        <strong>React</strong>
-                    </li>
-
-                </ul> <!-- /skill-bars -->		
-
-   		</div>
-
-   	</div>
-
-   	<div class="row button-section">
-   		<div class="col-twelve">
-   			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
-   			<a href="Ali Solanki – Growth Marketer _ Web3.pdf" title="Download CV (Growth)" class="button button-primary">Download CV (Growth)</a>
-   			<a href="Ali Solanki – Solidity _ Smart Contract Developer.pdf" title="Download CV (Solidity)" class="button button-primary">Download CV (Solidity)</a>
-   		</div>   		
-   	</div>
-
-   </section> <!-- /process-->    
-
-
-   <!-- resume Section
-   ================================================== -->
-	<section id="resume" class="grey-section">
-
-		<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5>Resume</h5>
-            <h2>More of my Credentials</h2>
-   		</div>   		
-   	</div> <!-- /section-intro--> 
-
-   	<div class="row resume-timeline">
-
-   		<div class="col-twelve resume-header">
-
-   			<h2>Education</h2>
-
-   		</div> <!-- /resume-header -->
-
-   		<div class="col-twelve">
-
-   			<div class="timeline-wrap">
-
-	   			<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>Bachelor's Degree</h3>
-	   					<p>July 2019 - Present(2023)</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4><a href="https://kjsce.somaiya.edu/">KJ Somaiya College Of Engineering</a></h4>
-	   					<p>Currently pursuing B.Tech. Degree specialization in Computer Science (CSE) at KJ Somaiya College Of Engineering, Vidyavihar - Mumbai. General Secretary at SAHAS                             - KJSCE.</p>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-                
-                
-	   			<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>Schooling</h3>
-	   					<p>2006 - 2017</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4><a href="https://bit.ly/346hi4s">Hansraj Morarji Public School</a></h4>
-	   					<p>Completed my schooling through Maharashtra Board at Hansraj Morarji Public School, Andheri (West) - Mumbai.</p>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-
-   			</div> <!-- /timeline-wrap -->   			
-
-   		</div> <!-- /col-twelve -->
-   		
-   	</div> <!-- /resume-timeline -->
-		
-	</section> <!-- /features -->
-
-
-	<!-- Portfolio Section
-   ================================================== -->
-	<section id="portfolio">
-
-		<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5>Portfolio</h5>
-   			<h2>Check Out Some of My Projects.</h2>
-
-   			<p class="lead">These Projects have helped me develop my Skills and understand the Industry better.</p>
-
-   		</div>   		
-   	</div> <!-- /section-intro--> 
-
-   	<div class="row portfolio-content">
-
-   		<div class="col-twelve">
-
-   			<!-- portfolio-wrapper -->
-	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
-		
-		<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/guestinme_app.png" alt="GuestInMe Nightlife Application">
-	                  <a href="#modal-08" class="overlay">             		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">GuestInMe Nightlife App</h3>	     					    
-                                    <span class="folio-types">
-                                        Mobile App Development
-                                    </span>		     		
-		     				</div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        </div> <!-- /folio-item -->
-             
-		<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/showworld_app.png" alt="Show World Film Directory Application">
-	                  <a href="#modal-07" class="overlay">             		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Show World App</h3>	     					    
-                                    <span class="folio-types">
-                                        Mobile App Development
-                                    </span>		     		
-		     				</div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        </div> <!-- /folio-item -->
-
-                <div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/showworld_website.png" alt="Show World Film Directory Website">
-	                  <a href="#modal-06" class="overlay">             		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Show World Website</h3>	     					    
-                                    <span class="folio-types">
-                                        Website Development
-                                    </span>		     		
-		     				</div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        	</div> <!-- /folio-item -->
-
-	         	<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/hospipro.jpg" alt="HospiPro">
-	                  <a href="#modal-05" class="overlay">	                  	           
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-                                <h3 class="folio-title">HospiPro</h3>	     					    
-                                    <span class="folio-types">
-                                    Android App Development
-                                </span>
-                            </div>	                      	
-	                     </div>                    
-	                  </a>
-	               </div>	               
-	        		</div> <!-- /folio-item -->
-
-	        		<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/buttonpress.jpg" alt="Button Press">
-	               	<a href="#modal-04" class="overlay">              		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-                                <h3 class="folio-title">Button Press</h3>	     					    
-                                <span class="folio-types">
-                                    Android App Development
-                                </span>		     		
-                            </div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->
-
-	            <div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/guestin.JPG"alt="GuestIn">
-	                  <a href="#modal-03" class="overlay">             		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-                                <h3 class="folio-title">GuestIn</h3>	     					    
-                                <span class="folio-types">
-                                    Website Development
-                                </span>		     		
-                            </div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        	</div> <!-- /folio-item -->
-
-	            <div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/snakegame.jpg" alt="snakegame">
-	                  <a href="#modal-02" class="overlay">                  	                 
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Snake Game</h3>	     					    
-                                <span class="folio-types">
-                                    Java Game Development
-                                </span>		     		
-                            </div>  	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        	</div> <!-- /folio-item -->     
-
-	        	<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/portfolio_website.JPG" alt="Portfolio">
-	                  <a href="#modal-01" class="overlay">             		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Portfolio</h3>	     					    
-		     			<span class="folio-types">
-		     				Website Development
-		     			</span>		     		
-		     		</div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        	</div> <!-- /folio-item -->
-
-	            <!-- modal popups - begin
-	            ============================================================= -->
-		<div id="modal-08" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-guestinme_app.png" alt="GuestInMe App" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>GuestInMe Nightlife App</h4>		      
-					      <p>GuestInMe Nightlife App made using Flutter and Firebase.</p>
-					      <div class="categories">Flutter App Development</div>			               
-					   </div>
-			         <div class="link-box">
-			            <a href="https://onelink.to/guestinme">App</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>
-                </div> <!-- /modal-08 -->
-                <div id="modal-07" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-showworld_app.png" alt="Show World Film Directory App" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Show World Film Directory App</h4>		      
-					      <p>Show World Film Directory App made using Flutter and Firebase.</p>
-					      <div class="categories">Flutter App Development</div>			               
-					   </div>
-			         <div class="link-box">
-			            <a href="https://play.google.com/store/apps/details?id=com.showworld.showworldfilmdirectory">App</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>
-                </div> <!-- /modal-07 -->
-
-                <div id="modal-06" class="popup-modal slider mfp-hide">
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-showworld_website.png" alt="Show World Film Directory Website" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Show World Website</h4>		      
-					      <p>Show World Film Directory Website made using HTML, CSS, JavaScript, PHP.</p>
-					      <div class="categories">Website Development</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="https://showworlddirectory.com">Visit</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>
-                </div> <!-- /modal-06 -->
-
-	            <div id="modal-05" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-hospipro.jpg" alt="HospiPro" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>HospiPro</h4>		      
-					      <p>Android App for Hospital management system. It was built under 24hrs for the KJSCE Hackathon - 2019. </p>
-
-					      <div class="categories">Android App Development</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="https://github.com/Team-Eureka04/Hospipro/tree/App">Github</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-				</div>
-			 <!-- /modal-05 -->
-
-		<div id="modal-04" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-buttonpress.jpg" alt="Button Press" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Button Press</h4>		      
-					      <p>Android Application that helps generate Random numbers.</p>
-
-					      <div class="categories">Android App Development</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="https://github.com/alisolanki/ButtonPress">Github</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-                </div> <!-- /modal-04 -->
-
-                <div id="modal-03" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-guestin.JPG" alt="GuestIn" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>GuestIn</h4>		      
-					      <p><strong>GuestIn</strong>, your one stop solution to get listed in the guestlist
-							of any Club or Bar all over <strong>Mumbai</strong>.</p>
-
-					      <div class="categories">Website Design</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="https://github.com/alisolanki/GuestIn">GitHub</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-                </div> <!-- /modal-03 -->
-
-                <div id="modal-02" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-snakegame.JPG" alt="Snake Game" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Snake Game</h4>		      
-					      <p>Classical Snake game on Java (one of my first Projects).</p>
-
-					      <div class="categories">Java Game Development</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="https://github.com/alisolanki/Snake-Game">Github</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-                </div> <!-- /modal-02 -->
-
-                <div id="modal-01" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-portfolio_website.JPG" alt="Portfolio" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Portfolio</h4>		      
-					      <p>My Portfolio Website made using HTML, CSS, JavaScript, PHP.</p>
-
-					      <div class="categories">Website Development</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="http://alisolanki.gq">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-                </div> <!-- /modal-01 -->
-
-
-				   <!-- modal popups - end
-	            ============================================================= -->
-
-	         </div> <!-- /portfolio-wrapper --> 
-
-   		</div>  <!-- /twelve -->   
-
-   	</div> <!-- /portfolio-content --> 
-		
-	</section> <!-- /portfolio --> 
-
-	
-	
-	<!-- stats Section
-   ================================================== -->
-	<section id="stats" class="count-up">
-
-		<div class="row">
-			<div class="col-twelve">
-
-				<div class="block-1-3 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
-
-					
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-light-bulb"></i>
-						</div>
-
-						<h3 class="stat-count">
-							80
-						</h3>
-
-						<h5 class="stat-title">
-							Crazy Ideas
-						</h5>
-
-					</div> <!-- /stat -->
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-cup"></i>
-						</div>
-
-						<h3 class="stat-count">
-							150
-						</h3>
-
-						<h5 class="stat-title">
-							Coffee Cups
-						</h5>
-
-					</div> <!-- /stat -->
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-clock"></i>
-						</div>
-
-						<h3 class="stat-count">
-							720
-						</h3>
-
-						<h5 class="stat-title">
-							Hours
-						</h5>
-
-					</div> <!-- /stat -->
-
-				</div> <!-- /stats-list -->
-
-			</div> <!-- /twelve -->
-		</div> <!-- /row -->
-
-	</section> <!-- /stats -->
-
-	
-   <!-- contact
-   ================================================== -->
-	<section id="contact">
-
-		<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5>Contact</h5>
-   			<h2>I'd Love To Hear From You.</h2>
-
-   			<p class="lead">Feel free to Contact Me:</p>
-
-   		</div> 
-   	</div> <!-- /section-intro -->
-
-   	<div class="row contact-form">
-
-   		<div class="col-twelve">
-            
-<!-- form -->
-<form name="form" id="contactForm" method="POST" action="https://formspree.io/f/mayaqvnv">
-      			<fieldset>
-                    <div class="form-field">
- 				<input name="name" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+                <!-- <div class="btn-con">
+                    <a href="" class="main-btn">
+                        <span class="btn-text">Download CV</span>
+                        <span class="btn-icon"><i class="fas fa-download"></i></span>
+                    </a>
+                </div> -->
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container about" id="about">
+            <div class="main-title">
+                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <h4>Information About me</h4>
+                    <p>
+                        With a keen eye for aesthetics and a passion for seamless user experiences, 
+                  my front-end programming skills are finely honed to deliver exceptional results. 
+                  From crafting visually captivating interfaces to optimizing performance for lightning-fast load times, 
+                  I possess the technical prowess and creative flair to create front-end magic. 
+                  My extensive experience in HTML, CSS, JavaScript, and various frameworks has empowered me to craft intuitive 
+                  and responsive web applications that captivate users from the moment they land on the page. 
+                  With a relentless pursuit of excellence and an unwavering commitment to staying abreast of the latest 
+                  industry trends, my front-end programming expertise is unparalleled. 
+                  Get ready to be dazzled by my high-pitched front-end programming prowess!
+                    </p>
+                    <!-- <div class="btn-con">
+                        <a href="#" class="main-btn">
+                            <span class="btn-text">Download CV</span>
+                            <span class="btn-icon"><i class="fas fa-download"></i></span>
+                        </a>
+                    </div> -->
+                </div>
+                <div class="right-about">
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">50+</p>
+                            <p class="small-text">Projects <br /> Completed</p>
+                        </div>
                     </div>
-                    <div class="form-field">
-				<input name="_replyto" type="email" id="contactEmail" placeholder="Email" value="" required="">
-	                </div>
-                    <div class="form-field">
-				<input name="_subject" type="text" id="contactSubject" placeholder="Subject" value="">
-	                </div>                       
-                    <div class="form-field">
-	                 	<textarea name="message" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
-	                </div>                      
-                    <div class="form-field">
-                        <button class="submitform" name="submit">Submit</button>
-                        <div id="submit-loader">
-			    <div class="text-loader">Sending...</div>                             
-       				  <div class="s-loader">
-					<div class="bounce1"></div>
-					<div class="bounce2"></div>
-					<div class="bounce3"></div>
-				    </div>
-			</div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">3+</p>
+                            <p class="small-text">Years of <br /> experience</p>
+                        </div>
                     </div>
+                    <!-- <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">300+</p>
+                            <p class="small-text">Happy <br /> Clients</p>
+                        </div>
+                    </div> -->
+                    <!-- <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">400+</p>
+                            <p class="small-text">Customer <br /> reviews</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="about-stats">
+                <h4 class="stat-title">My Skills</h4>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title">html5</p>
+                        <div class="progress-con">
+                            <p class="prog-text">80%</p>
+                            <div class="progress">
+                                <span class="html"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">css3</p>
+                        <div class="progress-con">
+                            <p class="prog-text">95%</p>
+                            <div class="progress">
+                                <span class="css"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">javascript</p>
+                        <div class="progress-con">
+                            <p class="prog-text">75%</p>
+                            <div class="progress">
+                                <span class="js"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">ReactJS</p>
+                        <div class="progress-con">
+                            <p class="prog-text">80%</p>
+                            <div class="progress">
+                                <span class="react"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">NodeJS</p>
+                        <div class="progress-con">
+                            <p class="prog-text">87%</p>
+                            <div class="progress">
+                                <span class="node"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Angular</p>
+                        <div class="progress-con">
+                            <p class="prog-text">80%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="progress-bar">
+                        <p class="prog-title">Next.js</p>
+                        <div class="progress-con">
+                            <p class="prog-text">60%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="stat-title">My Timeline</h4>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2020 - present</p>
+                    <h5>Web Developer<span> - TEO Intl</span></h5>
+                    <p>
+                       As a highly skilled front-end developer at TEO Intl, I bring extensive expertise in React, Angular, and other modern web technologies to create exceptional user interfaces. My primary responsibility involves developing responsive websites with pixel-perfect layouts that adhere to the highest design standards. Collaborating closely with UX/UI designers, back-end developers, and stakeholders, I ensure seamless integration and functionality of web applications. I am proficient in utilizing GitHub for version control and code management, while also actively participating in code reviews to maintain code quality and best practices.
 
-	</fieldset>
-</form>
+In addition, I am well-versed in DevOps practices, collaborating with DevOps teams to ensure smooth deployment and continuous integration of front-end applications. I consistently troubleshoot and debug front-end issues, ensuring optimal performance and user experience across various browsers and devices. My commitment to staying updated with the latest industry trends and best practices in front-end development allows me to deliver cutting-edge solutions that meet and exceed business requirements.
 
-            <!-- contact-warning -->
-<div id="message-warning">            	
-            </div> 
-            <!-- contact-success -->
-<div id="message-success">
-               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-      		</div> 
+As a mentor to junior front-end developers, I share my knowledge and provide guidance to help them grow their skills and expertise. I am dedicated to continuously improving front-end development processes, tools, and methodologies to enhance team productivity and efficiency. With my comprehensive skillset and passion for creating innovative front-end solutions, I am a valuable asset to XYZ company, driving success in front-end development projects.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">May 2017 - August 2017</p>
+                    <h5>Software Engineering Intern<span> - Army Welfare Trust</span></h5>
+                    <p>
+                    During my tenure as a .NET intern at XYZ company, I was actively involved in various aspects of office automation documentation and learning ASP.NET. My primary responsibilities included assisting in the development of ERP (Enterprise Resource Planning) software solutions, which involved understanding business requirements, analyzing data, and implementing features using ASP.NET technologies. I actively contributed to the design, development, and testing phases of the ERP software, working closely with senior .NET developers and other stakeholders.
 
-         </div> <!-- /col-twelve -->
-   		
-   	</div> <!-- /contact-form -->
-
-   	<div class="row contact-info">
-
-   		<div class="col-four tab-full">
-
-   			<div class="icon">
-   				<i class="icon-pin"></i>
-   			</div>
-
-   			<h5>Where to find me</h5>
-
-   			<p>
-            Andheri West, Mumbai<br>
-            400058 India
+In addition, I played a crucial role in documenting the office automation processes and procedures, creating comprehensive documentation for the ERP software, including user manuals and technical guides.
+As an intern, I was enthusiastic about learning and continuously enhancing my skills as a software developer and team player. 
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="container" id="portfolio">
+            <div class="main-title">
+                <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
+            </div>
+            <p class="port-text">
+                Here is some of my work that I've done in various programming languages.
             </p>
+            <div class="portfolios">
+                <div class="portfolio-item">
+                    <div class="image">
+                        <a href="https://github.com/muniba-123/SportsWebsite" target="_blank">
 
-   		</div>
+                         <img src="img/sports.png" alt=""></a>
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="https://github.com/muniba-123/SportsWebsite" class="icon" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <a href="http://beta.event-venue.dk/" target="_blank">   <img src="img/event.png" alt="">
+                            </a>    
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="http://beta.event-venue.dk/" class="icon" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <a href="https://github.com/muniba-123/Personality-test" target="_blank">
+                        <img src="img/personality.png" alt="">
+                        </a>
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="https://github.com/muniba-123/Personality-test" class="icon" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/angular.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="https://github.com/muniba-123/angular-products-crud-main" class="icon" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/mern.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="https://github.com/muniba-123/OnlineStore_MERN" class="icon" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/next.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="https://github.com/muniba-123/todo-with-nextjs-main" class="icon" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/laravel.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="https://github.com/muniba-123/Emp_management_laravel" class="icon" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                         
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/vue.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="https://github.com/muniba-123/vue-3-crud-master" class="icon" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/gql.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="https://github.com/muniba-123/ECommerce-App" class="icon" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/ext.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="https://github.com/muniba-123/Chrome-Extensions-master" class="icon" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </section>
+     
+        <section class="container contact" id="contact">
+            <div class="contact-container">
+                <div class="main-title">
+                    <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
+                </div>
+                <div class="contact-content-con">
+                    <div class="left-contact">
+                        <h4>Contact me here</h4>
+                        <!-- <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            In, laborum numquam? Quam excepturi perspiciatis quas quasi.
+                        </p> -->
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Location</span>
+                                </div>
+                                <p class="color-secondary">
+                                    Rawalpindi, Pakistan
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email</span>
+                                </div>
+                                <p>
+                                    <span class="color-secondary"><a href="mailto:muniba.fjwu@gmail.com"> muniba.fjwu@gmail.com</a></span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>Education</span>
+                                </div>
+                                <p>
+                                    <span class="color-secondary">FJWU</span>
+                                </p>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-globe-africa"></i>
+                                    <span>Languages</span>
+                                </div>
+                                <p>
+                                    <span class="color-secondary">  English, Urdu</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-icons">
+                            <div class="contact-icon">
+                              
+                                <a href="https://github.com/muniba-123" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/muniba-hina-22342b111/" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="right-contact">
+                        <form action="" class="contact-form">
+                            <div class="input-control i-c-2">
+                                <input type="text" required placeholder="YOUR NAME">
+                                <input type="email" required placeholder="YOUR EMAIL">
+                            </div>
+                            <div class="input-control">
+                                <input type="text" required placeholder="ENTER SUBJECT">
+                            </div>
+                            <div class="input-control">
+                                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                            </div>
+                            <div class="submit-btn">
+                                
+                            </div>
+                        </form>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    </main>
 
-   		<div class="col-four tab-full collapse">
-
-   			<div class="icon">
-   				<i class="icon-mail"></i>
-   			</div>
-
-   			<h5>Email Me At</h5>
-
-   			<p>alisolanki123@gmail.com<br>
-			   mohammed.solanki@somaiya.edu			     
-			</p>
-
-   		</div>
-
-   		<div class="col-four tab-full">
-
-   			<div class="icon">
-   				<i class="icon-phone"></i>
-   			</div>
-
-   			<h5>Call Me At</h5>
-
-			<p>Phone: Telegram (<a href="https://t.me/alisolanki">alisolanki</a>)
-			</p>
-   		</div>
-   		
-   	</div> <!-- /contact-info -->
-		
-	</section> <!-- /contact -->
-
-
-   <!-- footer ================================================== -->
-
-   <footer>
-     	<div class="row">
-
-     		<div class="col-six tab-full pull-right social">
-
-                <ul class="footer-social">
-                    <li><a href="https://www.linkedin.com/in/ali-solanki-2a1227192/"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://www.instagram.com/alisolankii"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="https://github.com/alisolanki"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCgzz4Kd1YpzxJOkrhf5U_7A/"><i class="fa fa-youtube"></i></a></li>
-                    <li><a href="https://www.codechef.com/users/alisolanki"><i class="fa fa-code"></i></a></li>
-            	    <li><a href="https://play.google.com/store/apps/dev?id=6991863212111988524"><i class="fa fa-play"></i></a></li>
-	    	    <li><a href="https://apps.apple.com/gh/developer/ali-solanki/id1556898924"><i class="fa fa-apple"></i></a></li>
-                </ul> 
-	      		
-	      </div>
-
-      	<div class="col-six tab-full">
-	      	<div class="copyright">
-		        	<span>© Copyright 2021 </span> 
-		        	<span>Design by <a href="https://www.linkedin.com/in/ali-solanki-2a1227192/">Mohd. Ali Solanki</a></span>	         	
-		         </div>		                  
-	      	</div>
-
-	      	<div id="go-top">
-		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
-		    </div>
-
-      	</div> <!-- /row -->     	
-   </footer>  
-   
-   <div id="preloader"> 
-    	<div id="loader"></div>
-   </div> 
-
-   <!-- Java Script
-   ================================================== --> 
-   <script src="js/jquery-2.1.3.min.js"></script>
-   <script src="js/plugins.js"></script>
-   <script src="js/main.js"></script>
-
+    <div class="controls">
+        <div class="control active-btn" data-id="home" >
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="control" data-id="about">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="control" data-id="portfolio">
+            <i class="fas fa-briefcase"></i>
+        </div>
+     
+        <div class="control" data-id="contact">
+            <i class="fas fa-envelope-open"></i>
+        </div>
+    </div>
+    <!-- <div class="theme-btn">
+        <i class="fas fa-adjust"></i>
+    </div> -->
+    <script src="app.js"></script>
 </body>
-
 </html>
